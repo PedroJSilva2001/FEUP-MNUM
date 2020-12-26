@@ -54,6 +54,9 @@ def bissection_iterations(a, b, f, iterations):
             a = c
     return c
 
+#in the stop criteria, you can divide by either a, b or c. It is not important
+#which one you choose, as long as the concept of it being a relative precision criteria
+#stays intact (which it keeps for all three options)
 def bissection_relative_precision(a, b, f, tolerance):
     c = 0
     while abs((a-b)/a) > tolerance:
