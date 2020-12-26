@@ -2,7 +2,7 @@
 # have a real-valued function continuous at the inteval [a,b] then if f(a) and f(b) have oposite signs, the function must at 
 # some point cross the x-axis.
 # The method consists of bissecting the interval [a,b], calculating the middle point c (c = a+b/2) and choosing the interval with the change in sign of the function
-# Each iteration reduces the length of the interval by two
+# Each iteration reduces the length of the interval by half
 # If an interval which posesses more than one root is given, the algorithm will only find one of them but it will not denounce the others
 # As it is a bracketing method, bissection always converges to a value if the function is continuous in the interval and if f(a) and f(b) have oppositve signs
 # It is a method of relative slow convergence because it does not use the values f(a) and f(b), only its signs
