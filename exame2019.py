@@ -39,7 +39,7 @@ def f2dery(x,y): return 2.0*y
 
 def J(x,y): return f1derx(x,y)*f2dery(x,y)-f2derx(x,y)*f1dery(x,y)
 
-def hn(x,y): return - (f1(x,y)*f2dery(x,y) - f2(x,y)*f2dery(x,y))/J(x,y)
+def hn(x,y): return - (f1(x,y)*f2dery(x,y) - f2(x,y)*f1dery(x,y))/J(x,y)
 
 def kn(x,y): return - (f1derx(x,y)*f2(x,y) - f2derx(x,y)*f1(x,y))/J(x,y) 
 
