@@ -85,8 +85,8 @@ def simpson(a,b,h,f):
             arc += 2*f(a+(i+1)*h)
     return arc*h/3.0
 
-L_trap = trapezoid(a,b,h,f)
-L_simp = simpson(a,b,h,f)
+L_trap = trapezoid(a,b,h,F)
+L_simp = simpson(a,b,h,F)
 print("trap h :", L_trap)        
 print("simp h :", L_simp)        
 
@@ -136,7 +136,7 @@ def aurea(x1, x2, x3, x4):
         else:
             x2 = x4
             x4 = x1 + b*(x2-x1)
-        print(x1, x2, x3, x4, f(x1), f(x2), f(x3), f(x4))
+        print(x1, x2, x3, x4, y(x1), y(x2), y(x3), y(x4))
 aurea(2,4, 2.76393, 3.23606)
 print()
 
