@@ -20,9 +20,9 @@ root = bissection(-1, 0, f, 6)
 #absolute_error = (0-(-1))/2**6
 a = -0.84375
 b = -0.8125
-absolute_error = root - a
+absolute_error = abs(root - a)
 print("absolute error:",absolute_error)
-print("relative error:" ,absolute_error/root , "\n") 
+print("relative error:" ,absolute_error/abs(root) , "\n") 
 print() 
 
 
