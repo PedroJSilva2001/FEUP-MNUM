@@ -65,7 +65,7 @@ a = 0
 b = 2
 k = 1.5
 
-def F(x): return (1+ (k*m.exp(k*x))**2)
+def F(x): return (1+ (k*m.exp(k*x))**2)**0.5
 def trapezoid(a,b,h, f):
     arc = (f(a)+f(b))/2.0
     n = round((b-a)/h)       
