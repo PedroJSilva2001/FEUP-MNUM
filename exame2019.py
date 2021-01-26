@@ -90,13 +90,13 @@ L_simp = simpson(a,b,h,F)
 print("trap h :", L_trap)        
 print("simp h :", L_simp)        
 
-L1_trap = trapezoid(a,b,h1,f)
-L1_simp = simpson(a,b,h1,f)
+L1_trap = trapezoid(a,b,h1,F)
+L1_simp = simpson(a,b,h1,F)
 print("trap h' :",L1_trap)        
 print("simp h' :", L1_simp)   
      
-L2_trap = trapezoid(a,b,h2,f)
-L2_simp = simpson(a,b,h2,f)
+L2_trap = trapezoid(a,b,h2,F)
+L2_simp = simpson(a,b,h2,F)
   
 print("trap h'' :",L2_trap)        
 print("simp h'' :", L2_simp)       
