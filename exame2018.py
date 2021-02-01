@@ -6,7 +6,7 @@ def g(x,y): return cos(x+y)-(x**2)*(y**2)
 
 def fderx(x,y): return cos(y+x)-exp(x-y)
 
-def fdery(x,y): return cos(y+x)-exp(x-y)
+def fdery(x,y): return cos(y+x)+exp(x-y)
 
 def gderx(x,y): return -sin(y+x)-(2*x)*y**2
 
@@ -139,7 +139,7 @@ print()
 #b = 0.2115 * 10^-3
 #c = 0.2583 * 10*1
 #b = 0.00000002115 * 10^4 = 0  
-#c = 0.0002583 * 10^4 = 0.0002
+#c = 0.0002583 * 10^4 = 0.0002 * 10^4
 #c+b+a = (0.0002 + 0 + 0.4523) *10^4 = 0.4525 E+4
 #erro absoluto = 4525.5832115 - 4525 = 0.5832 E+0
 #erro relativo = (4525.5832115 - 4525)/4525.5832115 * 100= 0.013% 
