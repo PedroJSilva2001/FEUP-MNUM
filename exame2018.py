@@ -31,8 +31,8 @@ print()
 #a) matriz diagonalmente dominante - I
 #b) eliminacao gauss - III (pivot já a um) 
 #c)
-def g1(x,y,z): return (0-5.5*y-3*z)/1
-def g2(x_next,y,z): return (1.2-103*x_next-41*z)/61 
+def g1(x_next,y,z): return (1.2-103*x_next-41*z)/61 
+def g2(x,y,z): return (0-5.5*y-3*z)/1
 def g3(x_next,y_next,z): return (-13-2*x_next-10*y_next)/13
 
 def gauss_seidel(x0,y0,z0, n):
