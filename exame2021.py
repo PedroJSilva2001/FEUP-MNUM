@@ -1,6 +1,6 @@
 import math
 # EX 1
-# Dado que se apresenta uma equação diferencial pode-se recorrer a um de 4 métodos númericos para o resolver:
+# Dado que se apresenta uma equação diferencial de 1ª ordem, pode-se recorrer a um de 4 métodos númericos para o resolver:
 # o método de euler, primeira ordem, euler modificado, 3 ordem, runge kutta 2, segunda ordem e runge kutta 4, quarta ordem, 
 # todos eles são baseados em integração no sentido de usarem conhecimento da derivada de x(t) que é f(x,t) para estimar 
 # a função. A ordem do método diz o número de estimativas ou médias ponderadas que faz para obter o próximo ponto
@@ -8,7 +8,8 @@ import math
 # diminuir para metade. O runge kutta 4 poderá ser usado dado que usa 4 estimas para aproximar o gráfico, ou seja, é o que
 # usa mais informação para obter os pontos. Visto que este método fornece um conjunto de pontos e não a expressão analítica 
 # da função, seria preciso fazer uma espécie de regressão com os pontos obtidos no rk4 que poderá ser feito por exemplo com os
-# minimos quadrados, que pondera muito mais os grandes desvios que os pequenos nos valores. Obtendo-se uma expressão pode-se aplicar
+# minimos quadrados, que pondera muito mais os grandes desvios que os pequenos nos valores. Pode-se também ver que tipo de padrão seguem
+# os pontos e escolher a regressão apropriada (linear, quadrática, exponencial, logaritmica...). Obtendo-se uma expressão pode-se aplicar
 # um método para descubrir raízes reais, que poderá ser feito com 5 métodos: método da bissecção, corda ou falsa posição, corda modificado, 
 # Newton e Picard-Peano. A bissecção e os dois da corda convergem sempre portanto não haveria os perigos do picard peano ou newton, que têm
 # condições de convergência. Para os dois da corda e para a bissecção seria só preciso fornecer um intervalo [a,b] em que só exista uma e uma só
